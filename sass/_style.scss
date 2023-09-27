@@ -1,0 +1,122 @@
+body{
+    position: fixed;
+    @include disf-ju-al-col-center;
+    width: 100%;
+    height: 100vh;
+    background-color: $light-purple;
+}
+
+.container{
+    width: 500px;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: .825rem;
+    text-transform: capitalize;
+    font-family: 'Poppins';
+    // Grocery Form //////////////////////
+    .grocery-form{
+        @include disf-ju-al-col-center;
+        .alert{
+            background-color: #ef5350;
+            padding: 0.1rem .8rem;
+            border-radius: $radius;
+            visibility: hidden;
+            transition: $ease-in-3s;
+        }
+        h2{
+            margin-bottom: 1.5rem;
+            font-family: 'Kalam';
+            font-weight: 600;
+            color: $blue-grey;
+        }
+        // form control //////////////
+        .form-control{
+            @include disf-sa-al-row-center;
+            width: 400px;
+            i{
+                color:$light-purple2;
+                font-size: 1.4rem;
+            }
+            input{
+                width: 280px;
+                border: 1px solid rgb(0,0,0,.3);
+                border-radius:$radius;
+                padding-left: 1rem;
+                padding:.2rem 0rem .2rem 1rem;
+                text-transform: capitalize;
+            }
+            input::placeholder{
+                text-transform: none;
+            }
+            button{
+                background-color: $light-purple2;
+                border-style: none;
+                padding: .3rem .5rem;
+                border-radius: $radius;
+                cursor: pointer;
+                transition: $ease-in-2s;
+
+            }
+            button:hover{
+                background-color:$light-green ;
+            }
+        }
+    }
+    // grocery container ///////////////////
+    .grocery-container{
+        @include disf-ju-al-col-center;
+        margin-top: 2rem;
+        width:100%;
+        // grocery list
+        .grocery-list{
+            @include disf-ju-al-col-center;
+            margin-bottom: 2rem;
+            width: 100%;
+            .grocery-item{
+                @include disf-sa-al-row-center;
+                width: 100%;
+                font-size: 1.1rem;
+                .mark{
+                    color: $light-purple2;
+                }
+                p{
+                    text-transform: capitalize;
+                    font-family: 'Kalam';
+                    font-size: 1.3rem;
+                }
+                .btn-container{
+                    width: 15%;
+                    display: flex;
+                    .edit-btn{
+                        border-style: none;
+                        background-color: #fff;
+                    }
+                    .fa-trash{
+                        color: #ef5350;
+                    }
+                    .fa-edit{
+                        color: $light-green;
+                    }
+                }
+            }
+        }
+        button{
+            width: 130px;
+            height: 40px;
+            border: none;
+            border-radius: $radius;
+            background-color: $light-purple2;
+            color: #fff;
+            font-family: 'Kalam';
+            transition: $ease-in-2s;
+            font-weight: 700;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: #ef5350;
+            color: $blue-grey;
+            transition: $ease-out-3s;
+            font-weight: 700;
+        }
+    }
+}

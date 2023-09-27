@@ -1,0 +1,12 @@
+@mixin disf-ju-al-col-center{
+    display:           flex;
+    flex-direction:  column;
+    align-items:     center;
+    justify-content: center;
+}
+@mixin disf-sa-al-row-center{
+    display:           flex;
+    flex-direction:     row;
+    align-items:     center;
+    justify-content: space-around;
+}

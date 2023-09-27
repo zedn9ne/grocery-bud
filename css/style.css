@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,800&display=swap");
+body {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #d7ccc8;
+}
+
+.container {
+  width: 500px;
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 0.825rem;
+  text-transform: capitalize;
+  font-family: "Poppins";
+}
+.container .grocery-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container .grocery-form .alert {
+  background-color: #ef5350;
+  padding: 0.1rem 0.8rem;
+  border-radius: 0.825rem;
+  visibility: hidden;
+  transition: ease-in 0.3s;
+}
+.container .grocery-form h2 {
+  margin-bottom: 1.5rem;
+  font-family: "Kalam";
+  font-weight: 600;
+  color: #263238;
+}
+.container .grocery-form .form-control {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 400px;
+}
+.container .grocery-form .form-control i {
+  color: #ba68c8;
+  font-size: 1.4rem;
+}
+.container .grocery-form .form-control input {
+  width: 280px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 0.825rem;
+  padding-left: 1rem;
+  padding: 0.2rem 0rem 0.2rem 1rem;
+  text-transform: capitalize;
+}
+.container .grocery-form .form-control input::placeholder {
+  text-transform: none;
+}
+.container .grocery-form .form-control button {
+  background-color: #ba68c8;
+  border-style: none;
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.825rem;
+  cursor: pointer;
+  transition: ease-in 0.2s;
+}
+.container .grocery-form .form-control button:hover {
+  background-color: #66bb6a;
+}
+.container .grocery-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  width: 100%;
+}
+.container .grocery-container .grocery-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+.container .grocery-container .grocery-list .grocery-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  font-size: 1.1rem;
+}
+.container .grocery-container .grocery-list .grocery-item .mark {
+  color: #ba68c8;
+}
+.container .grocery-container .grocery-list .grocery-item p {
+  text-transform: capitalize;
+  font-family: "Kalam";
+  font-size: 1.3rem;
+}
+.container .grocery-container .grocery-list .grocery-item .btn-container {
+  width: 15%;
+  display: flex;
+}
+.container .grocery-container .grocery-list .grocery-item .btn-container .edit-btn {
+  border-style: none;
+  background-color: #fff;
+}
+.container .grocery-container .grocery-list .grocery-item .btn-container .fa-trash {
+  color: #ef5350;
+}
+.container .grocery-container .grocery-list .grocery-item .btn-container .fa-edit {
+  color: #66bb6a;
+}
+.container .grocery-container button {
+  width: 130px;
+  height: 40px;
+  border: none;
+  border-radius: 0.825rem;
+  background-color: #ba68c8;
+  color: #fff;
+  font-family: "Kalam";
+  transition: ease-in 0.2s;
+  font-weight: 700;
+  cursor: pointer;
+}
+.container .grocery-container button:hover {
+  background-color: #ef5350;
+  color: #263238;
+  transition: ease-out 0.3s;
+  font-weight: 700;
+}
+
+/*# sourceMappingURL=style.css.map */
