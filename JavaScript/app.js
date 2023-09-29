@@ -30,7 +30,9 @@ function addItem(e) {
         console.log('editing item');
     }
     else {
-        console.log('empty');
+        alert.textContent = 'empty value';
+        alert.classList.add('alert-danger');
+
     }
 }
 // ****** Local Storage ******

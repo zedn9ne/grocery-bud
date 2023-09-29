@@ -24,6 +24,14 @@ body{
             visibility: hidden;
             transition: $ease-in-3s;
             font-size: .8rem;
+            text-transform: capitalize;
+        }
+        .alert-correct{
+            background-color: $light-green;
+            visibility: visible;
+        }
+        .alert-danger{
+            visibility: visible;
         }
         h2{
             margin-bottom: 1.5rem;

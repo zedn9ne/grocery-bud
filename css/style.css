@@ -32,6 +32,14 @@ body {
   visibility: hidden;
   transition: ease-in 0.3s;
   font-size: 0.8rem;
+  text-transform: capitalize;
+}
+.container .grocery-form .alert-correct {
+  background-color: #66bb6a;
+  visibility: visible;
+}
+.container .grocery-form .alert-danger {
+  visibility: visible;
 }
 .container .grocery-form h2 {
   margin-bottom: 1.5rem;
