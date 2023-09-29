@@ -19,9 +19,11 @@ body{
         .alert{
             background-color: #ef5350;
             padding: 0.1rem .8rem;
+            margin-bottom: 1rem;
             border-radius: $radius;
             visibility: hidden;
             transition: $ease-in-3s;
+            font-size: .8rem;
         }
         h2{
             margin-bottom: 1.5rem;
@@ -55,10 +57,12 @@ body{
                 border-radius: $radius;
                 cursor: pointer;
                 transition: $ease-in-2s;
+                color: #fff;
 
             }
             button:hover{
                 background-color:$light-green ;
+                color: $blue-grey;
             }
         }
     }
@@ -93,10 +97,50 @@ body{
                     }
                     .fa-trash{
                         color: #ef5350;
+                        display: inline-block;
+                        position: relative;
                     }
                     .fa-edit{
                         color: $light-green;
+                        display: inline-block;
+                        position: relative;
                     }
+                    .fa-trash::after {
+                        content: '';
+                        position: absolute;
+                        width: 100%;
+                        transform: scaleX(0);
+                        height: 4px;
+                        top: 1.3rem;
+                        bottom: 0;
+                        left: 0;
+                        background-color:#ef5350;
+                        transform-origin: bottom right;
+                        transition: transform 0.25s ease-out;
+                      }
+                      
+                      .fa-trash:hover::after {
+                        transform: scaleX(1);
+                        transform-origin: bottom left;
+                      }
+                      .fa-edit::after {
+                        content: '';
+                        position: absolute;
+                        width: 100%;
+                        transform: scaleX(0);
+                        height: 4px;
+                        top: 1.3rem;
+                        bottom: 0;
+                        left: 0;
+                        background-color: $light-green;
+                        transform-origin: bottom right;
+                        transition: transform 0.25s ease-out;
+                      }
+                      
+                      .fa-edit:hover::after {
+                        transform: scaleX(1);
+                        transform-origin: bottom left;
+                      }
                 }
             }
         }

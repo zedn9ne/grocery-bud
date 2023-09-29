@@ -27,9 +27,11 @@ body {
 .container .grocery-form .alert {
   background-color: #ef5350;
   padding: 0.1rem 0.8rem;
+  margin-bottom: 1rem;
   border-radius: 0.825rem;
   visibility: hidden;
   transition: ease-in 0.3s;
+  font-size: 0.8rem;
 }
 .container .grocery-form h2 {
   margin-bottom: 1.5rem;
@@ -66,9 +68,11 @@ body {
   border-radius: 0.825rem;
   cursor: pointer;
   transition: ease-in 0.2s;
+  color: #fff;
 }
 .container .grocery-form .form-control button:hover {
   background-color: #66bb6a;
+  color: #263238;
 }
 .container .grocery-container {
   display: flex;
@@ -112,9 +116,47 @@ body {
 }
 .container .grocery-container .grocery-list .grocery-item .btn-container .fa-trash {
   color: #ef5350;
+  display: inline-block;
+  position: relative;
 }
 .container .grocery-container .grocery-list .grocery-item .btn-container .fa-edit {
   color: #66bb6a;
+  display: inline-block;
+  position: relative;
+}
+.container .grocery-container .grocery-list .grocery-item .btn-container .fa-trash::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 4px;
+  top: 1.3rem;
+  bottom: 0;
+  left: 0;
+  background-color: #ef5350;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.container .grocery-container .grocery-list .grocery-item .btn-container .fa-trash:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.container .grocery-container .grocery-list .grocery-item .btn-container .fa-edit::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 4px;
+  top: 1.3rem;
+  bottom: 0;
+  left: 0;
+  background-color: #66bb6a;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.container .grocery-container .grocery-list .grocery-item .btn-container .fa-edit:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 .container .grocery-container button {
   width: 130px;
