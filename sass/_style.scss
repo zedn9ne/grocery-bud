@@ -91,21 +91,29 @@ body{
             .grocery-item{
                 @include disf-sa-al-row-center;
                 width: 100%;
+                height: 40px;
                 font-size: 1.1rem;
                 transition: $ease-in-3s;
                 .mark{
                     color: $light-purple2;
                 }
                 p{
+                    text-align: center;
                     text-transform: capitalize;
                     font-family: 'Kalam';
                     font-size: 1.3rem;
+                    width: 250px;
+                    max-height: 30px;
+                    overflow: hidden;
                 }
                 .btn-container{
                     width: 15%;
                     display: flex;
                     .edit-btn{
                         border-style: none;
+                        background-color: #fff;
+                    }
+                    .delete-btn{
                         background-color: #fff;
                     }
                     .fa-trash{
